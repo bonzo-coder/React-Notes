@@ -1,6 +1,6 @@
 {
   "name": "project",
-  "homepage": "https://bonzo-coder.github.io/React-Notes-app/",
+  "homepage": "https://bonzo-coder.github.io/React-Notes/",
   "dependencies": {
     "firebase": "^9.23.0",
     "nanoid": "^3.3.7",
@@ -19,6 +19,8 @@
   "scripts": {
     "start": "vite",
     "dev": "vite",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "build": "vite build",
     "preview": "vite preview"
   }
